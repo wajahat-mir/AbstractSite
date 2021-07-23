@@ -1,0 +1,4 @@
+﻿
+function submitReviewConfiguration(){
+    alert("Submitted!")
+}

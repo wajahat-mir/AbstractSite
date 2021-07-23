@@ -1,0 +1,22 @@
+﻿@model AbstractSite.Interfaces.INotificationFactory
+
+@{
+    ViewData["Title"] = "Notifications";
+}
+
+<div class="container">
+    <h1 class="display-4">Notifications</h1>
+    <p> Setup & View Notifications</p>
+
+    <div class="col-sm-12">
+        <partial name="@Model.name().viewName" model="Model.name()" />
+    </div>
+    <div class="col-sm-12">
+        <partial name="@Model.subject().viewName" model="Model.subject()" />
+    </div>
+    <div class="col-sm-12">
+        <partial name="@Model.submit().viewName" model="Model.submit()" />
+    </div>
+</div>
+
+<script src="~/js/submitNotifications.js"></script>
